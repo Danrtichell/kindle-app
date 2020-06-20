@@ -11,9 +11,9 @@ module.exports = {
           '@modules': './src/modules',
           '@enums': './src/enums',
           '@constant': './src/constant',
-          '@components': './src/components',
-        },
-      },
-    ],
-  ],
-};
+          '@components': './src/components'
+        }
+      }
+    ]
+  ]
+}

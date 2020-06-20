@@ -61,3 +61,22 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+assets/images.js
+.reactotron.json
+.env.production
+.env.override*
+config.json
+
+.env
+.vscode/
+
+GoogleService-Info.plist
+google-services.json
+
+# Jest
+report.*.json
+coverage/*
+
+google_play.json
+keystore.properties
