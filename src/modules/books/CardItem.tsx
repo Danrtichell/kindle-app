@@ -6,15 +6,18 @@ import styles from './styles'
 
 type Props = {
   item: BookModel
+  onTapPress: () => void
 }
 
 const CardItem = memo((props: Props) => {
-  const { item } = props
+  const { item, onTapPress } = props
   const { bookTitle, bookAuthor, bookImage } = item
 
   return (
     <View style={styles.cardItemContainer}>
-      <TouchableWithoutFeedback style={styles.cardContainer} onPress={() => {}}>
+      <TouchableWithoutFeedback
+        style={styles.cardContainer}
+        onPress={onTapPress}>
         <View style={styles.cardImageContainer}>
           <Image
             style={styles.cardImage}

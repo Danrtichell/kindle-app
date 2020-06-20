@@ -19,6 +19,8 @@
 		7CF2823FD169643148E27480 /* libPods-KindleApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A1BA6E863D7C4E0C8DAB63 /* libPods-KindleApp-tvOS.a */; };
 		8D6F6C25ACC6E567EAAA7E9D /* libPods-KindleApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 147E616E7B5BC8CAC7FF3CA4 /* libPods-KindleApp-tvOSTests.a */; };
 		96B9E17D2B5F349D7B56AE69 /* libPods-KindleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D87D047DD4E72075EDF070 /* libPods-KindleApp.a */; };
+		AB5D6CC6249E75AC00082C54 /* book1.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB5D6CC4249E75AC00082C54 /* book1.txt */; };
+		AB5D6CC7249E75AC00082C54 /* book2.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB5D6CC5249E75AC00082C54 /* book2.txt */; };
 		C330FC36BDE810BCCCB8E0D9 /* libPods-KindleApp-KindleAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 597167403D0923EF2D51F1EA /* libPods-KindleApp-KindleAppTests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		5C464D8E89C17E3497556BFD /* Pods-KindleApp-KindleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindleApp-KindleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-KindleApp-KindleAppTests/Pods-KindleApp-KindleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8719122ED151126DD46F7019 /* Pods-KindleApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindleApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-KindleApp-tvOSTests/Pods-KindleApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7A1BA6E863D7C4E0C8DAB63 /* libPods-KindleApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KindleApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5D6CC4249E75AC00082C54 /* book1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = book1.txt; path = ../../src/data/books/book1.txt; sourceTree = "<group>"; };
+		AB5D6CC5249E75AC00082C54 /* book2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = book2.txt; path = ../../src/data/books/book2.txt; sourceTree = "<group>"; };
 		ECC792FD94FDE35F6A7E80F9 /* Pods-KindleApp-KindleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindleApp-KindleAppTests.release.xcconfig"; path = "Target Support Files/Pods-KindleApp-KindleAppTests/Pods-KindleApp-KindleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -148,7 +152,6 @@
 				3B482429A1E2E1FA86F1C2AB /* Pods-KindleApp-tvOSTests.debug.xcconfig */,
 				8719122ED151126DD46F7019 /* Pods-KindleApp-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +178,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				AB5D6CC3249E753E00082C54 /* Assets */,
 				13B07FAE1A68108700A75B9A /* KindleApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* KindleAppTests */,
@@ -196,6 +200,15 @@
 				2D02E4901E0B4A5D006451C7 /* KindleApp-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AB5D6CC3249E753E00082C54 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D6CC4249E75AC00082C54 /* book1.txt */,
+				AB5D6CC5249E75AC00082C54 /* book2.txt */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,8 +351,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5D6CC7249E75AC00082C54 /* book2.txt in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				AB5D6CC6249E75AC00082C54 /* book1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

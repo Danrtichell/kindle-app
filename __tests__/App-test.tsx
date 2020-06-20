@@ -80,6 +80,12 @@ jest.mock('react-native-reanimated', () => {
   }
 })
 
+jest.mock('react-native-fs', () => {
+  return {
+    RNFSFileTypeRegular: {}
+  }
+})
+
 describe('Component: App', () => {
   beforeAll(() => {
     Keyboard.addListener = mockAddListener

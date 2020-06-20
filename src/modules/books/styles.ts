@@ -2,7 +2,6 @@ import { StyleSheet, ViewStyle, TextStyle, ImageStyle } from 'react-native'
 
 interface Styles {
   container: ViewStyle
-  content: ViewStyle
   cardItemContainer: ViewStyle
   cardContainer: ViewStyle
   cardRightContent: ViewStyle
@@ -17,9 +16,7 @@ const styles: Styles = StyleSheet.create<Styles>({
     flex: 1,
     backgroundColor: '#4d4d4d'
   },
-  content: {
-    flex: 1
-  },
+
   cardItemContainer: {
     paddingLeft: 16
   },

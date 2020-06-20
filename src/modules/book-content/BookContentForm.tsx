@@ -1,11 +1,19 @@
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { Text } from 'react-native'
+import { View, ScrollView, TextInput } from 'react-native'
+import styles from './styles'
 
-const BookContentForm = () => (
-  <SafeAreaView>
-    <Text>Book Content Screen</Text>
-  </SafeAreaView>
+type Props = {
+  content: string
+}
+
+const BookContentForm = ({ content }: Props) => (
+  <View style={styles.container}>
+    <ScrollView>
+      <TextInput multiline editable={false} style={styles.content}>
+        {content}
+      </TextInput>
+    </ScrollView>
+  </View>
 )
 
 export default BookContentForm
