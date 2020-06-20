@@ -9,8 +9,8 @@ const Stack = createStackNavigator()
 const AppStack = () => {
   return (
     <Stack.Navigator initialRouteName="Books" headerMode="screen">
-      <Stack.Screen name="Books" component={Books} />
-      <Stack.Screen name="BookContent" component={BookContent} />
+      <Stack.Screen name="Kindle" component={Books} />
+      <Stack.Screen name="Book Content" component={BookContent} />
     </Stack.Navigator>
   )
 }
